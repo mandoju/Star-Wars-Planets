@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavBar } from '../atom/NavBar';
-import { Logo } from '../atom/Logo';
+import { Logo } from '../molecule/Logo/Logo';
 
 
 export const Header = () => {
