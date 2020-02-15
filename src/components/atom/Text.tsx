@@ -1,9 +1,9 @@
 import React from 'react';
 
-interface TextProps {
+interface TextNormalProps {
     text: string;
 }
 
-export const Text = ({text}: TextProps) => {
+export const TextNormal = ({text}: TextNormalProps) => {
     return (<p>{text}</p>)
 }
