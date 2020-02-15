@@ -1,17 +1,11 @@
 import React from "react";
-//import { getClassNames } from "../../../utils/className";
 import styles from "./style.module.css";
 
-interface LogoProps {
-  children?: React.ReactNode
-}
-
 /**
- * Este componente serve para renderizar um texto de Header.
- * @param children Texto que irá ser renderizado
+ * Este componente serve para renderizar o logo da página.
  */
-export const Logo = ({ children}: LogoProps) => {
+export const Logo = () => {
   return (
-    <h1 className={styles.logo}>{children}</h1>
+    <h1 className={styles.logo}>Star Wars Planets</h1>
   );
 };

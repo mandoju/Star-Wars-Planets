@@ -5,6 +5,6 @@ import { Logo } from '../atom/Logo';
 
 export const Header = () => {
     return (  <NavBar>
-        <Logo >Star Wars Planets </Logo>
+        <Logo />
       </NavBar>)
 }
