@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/atom/NavBar';
+import { Text } from './components/atom/Text';
 
 function App() {
   return (
     <div>
+      <NavBar>
+        <Text text={"Star Wars Planets"} />
+      </NavBar>
     </div>
   );
 }
