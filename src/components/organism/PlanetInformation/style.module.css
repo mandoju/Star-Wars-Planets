@@ -1,0 +1,31 @@
+.planetInformationContainer {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  flex-direction: column;
+  margin-left: 5;
+  margin-right: 5;
+}
+
+.animatedText {
+  position: relative;
+  animation: animateright 0.5s;
+}
+
+.featuredTextContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
