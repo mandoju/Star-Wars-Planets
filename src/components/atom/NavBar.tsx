@@ -6,7 +6,7 @@ interface NavBarProps {
 
 export const NavBar = ({children} : NavBarProps) => {
 
-    return (<nav className={"navbar navbar-expand-lg navbar-light bg-light"}>
+    return (<nav className={"navbar navbar-expand-lg navbar-light bg-dark"}>
         {children}
     </nav>)
 }
