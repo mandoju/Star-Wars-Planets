@@ -1,0 +1,43 @@
+.planetInformationContainer {
+  display: flex;
+  flex: 1 1;
+  width: 100%;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5;
+  margin-right: 5;
+}
+
+
+
+.animatedText {
+  position: relative;
+  animation: animateright 0.5s;
+}
+
+.planetPopulationClimateTerrainContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+   flex-direction: column;
+}
+
+.featuredTextContainer {
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

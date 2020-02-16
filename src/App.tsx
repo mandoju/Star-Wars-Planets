@@ -2,13 +2,22 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/organism/Header';
 import { RandomPlanetPage } from './pages/RandomPlanetPage';
+import { useCreatePlanetContext, PlanetContext } from './hooks/PlanetContext';
+
+
 
 function App() {
+  const {planet,setPlanet} = useCreatePlanetContext();
+
   return (
-    <div className={"bg-dark"}>
-      <Header />
-      <RandomPlanetPage />
-    </div>
+    <PlanetContext.Provider value={{ planet, setPlanet }}>
+
+      <div className={"bg-dark"}>
+        <Header />
+        <RandomPlanetPage />
+      </div>
+    </PlanetContext.Provider>
+
   );
 }
 
