@@ -1,0 +1,82 @@
+{
+  "title": "Planet",
+  "properties": {
+    "diameter": {
+      "type": "string",
+      "description": "The diameter of this planet in kilometers."
+    },
+    "films": {
+      "type": "array",
+      "description": "An array of Film URL Resources that this planet has appeared in."
+    },
+    "gravity": {
+      "type": "string",
+      "description": "A number denoting the gravity of this planet. Where 1 is normal."
+    },
+    "surface_water": {
+      "type": "string",
+      "description": "The percentage of the planet surface that is naturally occuring water or bodies of water."
+    },
+    "created": {
+      "description": "The ISO 8601 date format of the time that this resource was created.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "population": {
+      "type": "string",
+      "description": "The average populationof sentient beings inhabiting this planet."
+    },
+    "terrain": {
+      "type": "string",
+      "description": "the terrain of this planet. Comma-seperated if diverse."
+    },
+    "climate": {
+      "type": "string",
+      "description": "The climate of this planet. Comma-seperated if diverse."
+    },
+    "residents": {
+      "type": "array",
+      "description": "An array of People URL Resources that live on this planet."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of this planet."
+    },
+    "edited": {
+      "description": "the ISO 8601 date format of the time that this resource was edited.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "rotation_period": {
+      "type": "string",
+      "description": "The number of standard hours it takes for this planet to complete a single rotation on its axis."
+    },
+    "url": {
+      "description": "The hypermedia URL of this resource.",
+      "type": "string",
+      "format": "uri"
+    },
+    "orbital_period": {
+      "type": "string",
+      "description": "The number of standard days it takes for this planet to complete a single orbit of its local star."
+    }
+  },
+  "required": [
+    "name",
+    "rotation_period",
+    "orbital_period",
+    "diameter",
+    "climate",
+    "gravity",
+    "terrain",
+    "surface_water",
+    "population",
+    "residents",
+    "films",
+    "created",
+    "edited",
+    "url"
+  ],
+  "type": "object",
+  "description": "A planet."
+}

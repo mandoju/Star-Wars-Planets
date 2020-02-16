@@ -1,0 +1,7 @@
+.planetCardContainer {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  align-items: center;
+  flex-direction: column;
+}

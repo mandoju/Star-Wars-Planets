@@ -1,0 +1,22 @@
+.KeyValueContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  max-height: calc(40px + 1vmin);
+}
+
+.labelContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 10px;
+  text-align: end;
+}
+
+.valueContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin-left: 10px;
+  text-align: start;
+}
