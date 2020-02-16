@@ -7,5 +7,5 @@ export interface AppPlanet {
   population: string; //tamanho da população que o planeta possui
   climate: string; // clima que o planeta possui
   terrain: string; // terreno que o planeta possui
-  films: string; // número de filmes que o planeta possuii
+  films: number; // número de filmes que o planeta possuii
 }

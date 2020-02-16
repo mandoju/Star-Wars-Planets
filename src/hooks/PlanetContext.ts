@@ -9,7 +9,7 @@ const planetDefault: AppPlanet = {
     population: "10000",
     climate: "too hot",
     terrain: "snowy",
-    films: "0"
+    films: 0
   };
 
 /**
