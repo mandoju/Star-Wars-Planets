@@ -31,7 +31,7 @@ export const PlanetCard = ({
 }: PlanetCardProps) => {
   return (
     <div className={ getClassNames(styles.planetCardContainer, "bg-secondary")}>
-      <Title>{name}</Title>
+      <Title className={"text-warning"}>{name}</Title>
       <PlanetInformation
         population={population}
         climate={climate}

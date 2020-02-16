@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "../../atom/Container/Container";
 import styles from "./style.module.css";
+import { getClassNames } from "../../../utils/className";
 //import ReactLoading from "react-loading";
 
 /**
@@ -10,8 +11,10 @@ import styles from "./style.module.css";
 
 export const PlanetCardLoading = () => {
   return (
-    <Container className={styles.planetCardContainer}>
-      <h1>Loading</h1>
+    <Container className={getClassNames(styles.planetCardContainer,"bg-secondary")}>
+      <div className="spinner-border text-warning" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
     </Container>
   );
 };

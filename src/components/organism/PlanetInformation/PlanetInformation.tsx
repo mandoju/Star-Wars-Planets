@@ -2,6 +2,7 @@ import React from "react";
 import { LabelValueText } from "../../molecule/LabelValueText/LabelValueText";
 import style from "./style.module.css";
 import { TextNormal } from "../../atom/TextNormal";
+import { getClassNames } from "../../../utils/className";
 
 export interface PlanetInformationProps {
   population: string;
@@ -25,28 +26,29 @@ export const PlanetInformation = ({
   terrain,
   films
 }: PlanetInformationProps) => {
+  const textClass = getClassNames(style.animatedText, "text-warning")
   return (
     <div className={style.planetInformationContainer}>
       <LabelValueText
         label={"Population: "}
         value={population}
-        labelClassName={style.animatedText}
-        valueClassName={style.animatedText}
+        labelClassName={textClass}
+        valueClassName={textClass}
       />
       <LabelValueText
         label={"Climate: "}
         value={climate}
-        labelClassName={style.animatedText}
-        valueClassName={style.animatedText}
+        labelClassName={textClass}
+        valueClassName={textClass}
       />
       <LabelValueText
         label={"Terrain: "}
         value={terrain}
-        labelClassName={style.animatedText}
-        valueClassName={style.animatedText}
+        labelClassName={textClass}
+        valueClassName={textClass}
       />
       <div className={style.featuredTextContainer}>
-      <TextNormal className={style.animatedText}>{featuredFilmsText(films)}</TextNormal>
+      <TextNormal className={textClass}>{featuredFilmsText(films)}</TextNormal>
         </div>
     </div>
   );
