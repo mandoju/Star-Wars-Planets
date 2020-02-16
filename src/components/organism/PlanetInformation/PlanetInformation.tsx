@@ -28,6 +28,7 @@ export const PlanetInformation = ({
   const textClass = getClassNames(style.animatedText, "text-warning")
   return (
     <div className={style.planetInformationContainer}>
+      <div className={style.planetPopulationClimateTerrainContainer}>
       <LabelValueText
         label={"Population: "}
         value={population}
@@ -46,6 +47,7 @@ export const PlanetInformation = ({
         labelClassName={textClass}
         valueClassName={textClass}
       />
+      </div>
       <div className={style.featuredTextContainer}>
       <p className={textClass}>{featuredFilmsText(films)}</p>
         </div>
