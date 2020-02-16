@@ -5,8 +5,6 @@
 
 Este projeto é um SPA (Single Page Application) que mostra um planeta aleatório do Star Wars cada vez que você clica no botão "Next".
 
-Este projeto utiliza o bootstrap
-
   
 
 ## Requisitos para instalação
@@ -33,7 +31,7 @@ Para instalar o ambiente, você precisa executar os seguintes passos:
 
 - Clonar o projeto para o seu computador utilizando: `` git clone https://github.com/mandoju/Star-Wars-Planets ``
 
-- instalar os pacotes do projeto utilizando `` yarn install `` caso tenha yarn ou `` caso install `` caso prefira utilizar o npm.
+- instalar os pacotes do projeto utilizando `` yarn install `` caso tenha yarn ou `` npm install `` caso prefira utilizar o npm.
 
 ## Executando o projeto
 
