@@ -6,3 +6,15 @@
   align-items: center;
   height: 100vh;
 }
+
+.cardContainer {
+  display: flex;
+  flex: 0.7;
+  min-width: 250px;
+  width: 30%;
+  justify-content: center;
+}
+
+.buttonContainer {
+  margin-top: 30px;
+}

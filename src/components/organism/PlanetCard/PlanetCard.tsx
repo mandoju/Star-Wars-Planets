@@ -3,8 +3,9 @@ import { Title } from "../../atom/Title";
 import {
   PlanetInformation,
   PlanetInformationProps
-} from "../PlanetInformation";
+} from "../PlanetInformation/PlanetInformation";
 import styles from "./style.module.css";
+import { getClassNames } from "../../../utils/className";
 
 interface PlanetCardProps extends PlanetInformationProps {
   name: string;
@@ -29,7 +30,7 @@ export const PlanetCard = ({
   films
 }: PlanetCardProps) => {
   return (
-    <div className={styles.planetCardContainer}>
+    <div className={ getClassNames(styles.planetCardContainer, "bg-secondary")}>
       <Title>{name}</Title>
       <PlanetInformation
         population={population}

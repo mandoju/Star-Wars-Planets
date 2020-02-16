@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./style.module.css";
-import { PlanetCardLoading } from "../components/organism/PlanetCardLoading";
+import { PlanetCardLoading } from "../components/organism/PlanetCardLoading/PlanetCardLoading";
 import { usePlanetContext } from "../hooks/PlanetContext";
 import { getPlanetRandom } from "../requesters/PlanetRequester";
 import { Container } from "../components/atom/Container/Container";
@@ -39,7 +39,7 @@ export const RandomPlanetPage = () => {
         )}
       </Container>
       <div className={style.buttonContainer}>
-        <button onClick={nextClick} title={"Next"} />
+        <button type="button" className="btn btn-secondary" onClick={nextClick}>Next</button>
       </div>
     </div>
   );
