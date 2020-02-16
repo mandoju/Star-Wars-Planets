@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/organism/Header';
 import { RandomPlanetPage } from './pages/RandomPlanetPage';
-import { useState } from 'react';
 import { useCreatePlanetContext, PlanetContext } from './hooks/PlanetContext';
 
 
