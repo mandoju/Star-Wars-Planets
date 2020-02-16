@@ -1,5 +1,4 @@
 import React from "react";
-import { TextNormal } from "../../atom/TextNormal";
 import style from "./style.module.css";
 
 interface LabelValueTextProps {
@@ -25,10 +24,10 @@ export const LabelValueText = ({
   return (
     <div className={style.KeyValueContainer}>
       <div className={style.labelContainer}>
-        <TextNormal className={labelClassName}>{label}</TextNormal>
+        <p className={labelClassName}>{label}</p>
       </div>
       <div className={style.valueContainer}>
-        <TextNormal className={valueClassName}>{value}</TextNormal>
+        <p className={valueClassName}>{value}</p>
       </div>
     </div>
   );

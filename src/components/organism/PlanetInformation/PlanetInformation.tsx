@@ -1,7 +1,6 @@
 import React from "react";
 import { LabelValueText } from "../../molecule/LabelValueText/LabelValueText";
 import style from "./style.module.css";
-import { TextNormal } from "../../atom/TextNormal";
 import { getClassNames } from "../../../utils/className";
 
 export interface PlanetInformationProps {
@@ -48,7 +47,7 @@ export const PlanetInformation = ({
         valueClassName={textClass}
       />
       <div className={style.featuredTextContainer}>
-      <TextNormal className={textClass}>{featuredFilmsText(films)}</TextNormal>
+      <p className={textClass}>{featuredFilmsText(films)}</p>
         </div>
     </div>
   );
