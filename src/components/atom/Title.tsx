@@ -1,5 +1,4 @@
-import React, { Children } from "react";
-import styles from "./style.module.css";
+import React from "react";
 
 /**
  * Este componente serve para renderizar um texto de titulo
