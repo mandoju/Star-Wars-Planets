@@ -1,11 +1,23 @@
 
+
 # Star Wars Planets
 
   
 
 Este projeto é um SPA (Single Page Application) que mostra um planeta aleatório do Star Wars cada vez que você clica no botão "Next".
 
-  
+## Dependências
+
+
+Este projeto foi gerado utilizando ``create-react-app`` e possui as seguintes dependências :
+
+ - ajv: "^6.11.0" : utilizado para testar se a saída da API está correta
+ - axios: "^0.19.2" : utilizado para fazer as requisições para API
+ - bootstrap: "^4.4.1" : utilizado para fazer o design da navbar, botão, etc.
+ - react: "^16.12.0" : framework utilizado para fazer o SPA
+ - react-dom: "^16.12.0" : biblioteca utilizada para renderizar o HTML.
+ - react-scripts: "3.4.0" : pacote que inclui os scripts e configurações do ``create-react-app``
+ - typescript: "~3.7.2": Utilizado para adicionar tipagem ao projeto
 
 ## Requisitos para instalação
 
